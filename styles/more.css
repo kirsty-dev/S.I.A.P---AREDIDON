@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+/* Back button */
+.top-bar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.back-arrow {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Headers */
+.title {
+    margin-top: 40px;
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1.4;
+}
+
+/* Grid layout */
+.grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Card design */
+.card {
+    background: #2e2e2e;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+    color: #eee;
+}
+
+.thumbnail {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.thumbnail {
+    transition: 0.4s ease;
+}
+
+.thumbnail:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #cfcfcf;
+}
+
+.card ul {
+    list-style: none;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.card ul li {
+    color: #d9d9d9;
+}

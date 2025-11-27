@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Georgia', serif;
+  overflow-x: hidden;
+  background-color: #000;
+  color: #fff;
+}
+
+body {
+  background: linear-gradient(to right, #1c1c1c, #787878);
+}
+
+/* Header/Navbar */
+header {
+  background: radial-gradient(circle, #ddd 20%, #111 90%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  font-family: 'Georgia', serif;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #fff;
+}
+
+.contact-btn {
+  background-color: #ccc;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.contact-btn:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Contact Content */
+.contact-section {
+  padding: 80px 50px;
+  max-width: 700px;
+}
+
+.contact-section h1 {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-section h3 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #d0d0d0;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.contact-info {
+  margin-top: 20vh;
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 45px 20px;
+  font-size: 18px;
+  flex-wrap: wrap;
+  border-top: 1px solid #ccc;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-item a {
+  color: black;
+  text-decoration: underline;
+}
+
+.contact-item i {
+  font-size: 18px;
+}
+
+/* ✅ Media Query Fixes for Mobile */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-section h1 {
+    font-size: 42px;
+  }
+
+  .contact-section h3 {
+    font-size: 24px;
+  }
+
+  .contact-section p {
+    font-size: 16px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+  }
+}
